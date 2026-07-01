@@ -1,0 +1,144 @@
+<svg viewBox="0 0 2100 2840" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="45">
+  <title>Figure 1 — Dual-Pipeline Framework (corrected symbols)</title>
+  <defs>
+    <marker id="arr" markerWidth="16" markerHeight="11" refX="15" refY="5.5" orient="auto">
+      <polygon points="0 0, 16 5.5, 0 11" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="2100" height="2840" fill="white"/>
+
+  <!-- START oval -->
+  <ellipse cx="995" cy="80" rx="110" ry="55" fill="#455a64" stroke="#263238" stroke-width="3"/>
+  <text x="995" y="96" text-anchor="middle" fill="white" font-weight="bold" font-size="48">Start</text>
+  <line x1="995" y1="135" x2="995" y2="178" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- PLANNING rect -->
+  <rect x="565" y="178" width="860" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="995" y="252" text-anchor="middle" fill="#222">Planning for build an AI model</text>
+
+  <!-- SPLIT -->
+  <line x1="995" y1="298" x2="995" y2="360" stroke="#333" stroke-width="2.8"/>
+  <line x1="430"  y1="360" x2="1560" y2="360" stroke="#333" stroke-width="2.8"/>
+  <line x1="430"  y1="360" x2="430"  y2="400" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+  <line x1="1560" y1="360" x2="1560" y2="400" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- ===== LEFT BRANCH (cx=430, w=800) x=30..830 ===== -->
+
+  <!-- Step 1: Header -->
+  <rect x="30" y="400" width="800" height="180" fill="#e3f2fd" stroke="#1565c0" stroke-width="3"/>
+  <text x="430" y="464" text-anchor="middle" fill="#0d47a1" font-weight="bold" font-size="49">Object-Detection</text>
+  <text x="430" y="520" text-anchor="middle" fill="#0d47a1" font-weight="bold" font-size="49">model</text>
+  <line x1="430" y1="580" x2="430" y2="660" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Gathering CT — PARALLELOGRAM (input) -->
+  <!-- cx=430, w=800, skew=32: TL=62, TR=862, BR=830, BL=30 -->
+  <polygon points="62,660 862,660 830,840 30,840" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="446" y="726" text-anchor="middle" fill="#222">Gathering dataset</text>
+  <text x="446" y="780" text-anchor="middle" fill="#222">(CT scan dataset)</text>
+  <line x1="430" y1="840" x2="430" y2="920" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Annotating — RECT (process) -->
+  <rect x="30" y="920" width="800" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="430" y="995" text-anchor="middle" fill="#222">Annotating type of tumor</text>
+  <line x1="430" y1="1040" x2="430" y2="1120" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Split data — RECT (process) -->
+  <rect x="30" y="1120" width="800" height="180" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="430" y="1184" text-anchor="middle" fill="#222">Split data for training model</text>
+  <text x="430" y="1244" text-anchor="middle" fill="#222">(Train / Test / Valid)</text>
+  <line x1="430" y1="1300" x2="430" y2="1380" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 5: Setting param — RECT (process) -->
+  <rect x="30" y="1380" width="800" height="180" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="430" y="1444" text-anchor="middle" fill="#222">Setting parameter and</text>
+  <text x="430" y="1504" text-anchor="middle" fill="#222">selecting model for training</text>
+  <line x1="430" y1="1560" x2="430" y2="1640" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 6: Training — RECT (process) -->
+  <rect x="30" y="1640" width="800" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="430" y="1715" text-anchor="middle" fill="#222">Training model</text>
+
+  <!-- ===== RIGHT BRANCH (cx=1560, w=800) x=1160..1960 ===== -->
+
+  <!-- Step 1: Header -->
+  <rect x="1160" y="400" width="800" height="180" fill="#fce4ec" stroke="#880e4f" stroke-width="3"/>
+  <text x="1560" y="464" text-anchor="middle" fill="#880e4f" font-weight="bold" font-size="49">Machine-Learning</text>
+  <text x="1560" y="520" text-anchor="middle" fill="#880e4f" font-weight="bold" font-size="49">model</text>
+  <line x1="1560" y1="580" x2="1560" y2="660" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 2: Gathering patients — PARALLELOGRAM (input) -->
+  <!-- cx=1560, w=800, skew=32: TL=1192, TR=1992, BR=1960, BL=1160 -->
+  <polygon points="1192,660 1992,660 1960,840 1160,840" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="1576" y="726" text-anchor="middle" fill="#222">Gathering Dataset</text>
+  <text x="1576" y="780" text-anchor="middle" fill="#222">(Patients information)</text>
+  <line x1="1560" y1="840" x2="1560" y2="920" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Preprocessing — PARALLELOGRAM (input/data) -->
+  <polygon points="1192,920 1992,920 1960,1040 1160,1040" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="1576" y="995" text-anchor="middle" fill="#222">Preprocessing data</text>
+  <line x1="1560" y1="1040" x2="1560" y2="1120" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Split data — RECT (process) -->
+  <rect x="1160" y="1120" width="800" height="180" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="1560" y="1184" text-anchor="middle" fill="#222">Split data for training model</text>
+  <text x="1560" y="1244" text-anchor="middle" fill="#222">(Train / Test)</text>
+  <line x1="1560" y1="1300" x2="1560" y2="1380" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 5: Setting param — RECT (process) -->
+  <rect x="1160" y="1380" width="800" height="180" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="1560" y="1444" text-anchor="middle" fill="#222">Setting parameter and</text>
+  <text x="1560" y="1504" text-anchor="middle" fill="#222">selecting model for training</text>
+  <line x1="1560" y1="1560" x2="1560" y2="1640" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- Step 6: Training — RECT (process) -->
+  <rect x="1160" y="1640" width="800" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="1560" y="1715" text-anchor="middle" fill="#222">Training model</text>
+
+  <!-- ===== MERGE — plain lines, no symbol ===== -->
+  <line x1="430"  y1="1760" x2="430"  y2="1860" stroke="#333" stroke-width="2.8"/>
+  <line x1="1560" y1="1760" x2="1560" y2="1860" stroke="#333" stroke-width="2.8"/>
+  <line x1="430"  y1="1860" x2="1560" y2="1860" stroke="#333" stroke-width="2.8"/>
+  <line x1="995"  y1="1860" x2="995"  y2="1900" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- EVALUATING — RECT (process) -->
+  <rect x="565" y="1900" width="860" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="995" y="1975" text-anchor="middle" fill="#222">Evaluating model</text>
+  <line x1="995" y1="2020" x2="995" y2="2100" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- DECISION DIAMOND -->
+  <!-- center(995,2260) top(995,2100) right(1245,2260) bottom(995,2420) left(745,2260) -->
+  <polygon points="995,2100 1245,2260 995,2420 745,2260" fill="#fff9c4" stroke="#f57f17" stroke-width="3"/>
+  <text x="995" y="2240" text-anchor="middle" fill="#5d4037" font-weight="bold">Is score</text>
+  <text x="995" y="2296" text-anchor="middle" fill="#5d4037" font-weight="bold">good?</text>
+
+  <!-- YES arrow down -->
+  <line x1="995" y1="2420" x2="995" y2="2520" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+  <text x="1030" y="2480" fill="#2e7d32" font-weight="bold">YES</text>
+
+  <!-- NO arrow left + loop back to Setting param (cy=1470) -->
+  <line x1="745" y1="2260" x2="16"  y2="2260" stroke="#333" stroke-width="2.8"/>
+  <text x="690" y="2236" text-anchor="middle" fill="#c62828" font-weight="bold">NO</text>
+  <line x1="16"  y1="2260" x2="16"  y2="1470" stroke="#333" stroke-width="2.8"/>
+  <line x1="16"  y1="1470" x2="29"  y2="1470" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- BUILD AND DEPLOY — RECT (process) -->
+  <rect x="565" y="2520" width="860" height="120" fill="white" stroke="#333" stroke-width="2.8"/>
+  <text x="995" y="2595" text-anchor="middle" fill="#222">Build and deploy model</text>
+  <line x1="995" y1="2640" x2="995" y2="2720" stroke="#333" stroke-width="2.8" marker-end="url(#arr)"/>
+
+  <!-- END oval -->
+  <ellipse cx="995" cy="2776" rx="110" ry="55" fill="#455a64" stroke="#263238" stroke-width="3"/>
+  <text x="995" y="2792" text-anchor="middle" fill="white" font-weight="bold" font-size="48">End</text>
+
+  <!-- LEGEND -->
+  <rect x="1310" y="1900" width="740" height="360" rx="6" fill="white" stroke="#bbb" stroke-width="2"/>
+  <text x="1680" y="1956" text-anchor="middle" fill="#333" font-weight="bold" font-size="40">Legend</text>
+  <rect x="1330" y="1974" width="72" height="50" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="1416" y="2008" fill="#444" font-size="38">Process (Rect)</text>
+  <polygon points="1332,2042 1396,2042 1380,2092 1316,2092" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="1416" y="2076" fill="#444" font-size="38">Input (Para.)</text>
+  <polygon points="1356,2106 1396,2136 1356,2166 1316,2136" fill="#fff9c4" stroke="#f57f17" stroke-width="2"/>
+  <text x="1416" y="2142" fill="#444" font-size="38">Decision</text>
+  <ellipse cx="1356" cy="2196" rx="42" ry="26" fill="#455a64" stroke="#263238" stroke-width="2"/>
+  <text x="1416" y="2205" fill="#444" font-size="38">Start / End</text>
+</svg>

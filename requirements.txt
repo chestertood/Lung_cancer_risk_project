@@ -1,0 +1,25 @@
+# Core data science
+numpy
+pandas
+matplotlib
+seaborn
+joblib
+
+# Machine learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+imbalanced-learn
+
+# Deep learning / computer vision (YOLO detection pipeline)
+torch
+tensorflow
+tensorflow-hub
+opencv-python
+ultralytics
+
+# Document / report generation utilities (src/reporting)
+python-docx
+openpyxl
+reportlab

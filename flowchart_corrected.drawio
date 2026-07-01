@@ -1,0 +1,207 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Dual-Pipeline Flowchart">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- START -->
+        <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#455a64;fontColor=#ffffff;strokeColor=#263238;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="354" y="10" width="88" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- PLANNING -->
+        <mxCell id="3" value="Planning for build an AI model" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="226" y="71" width="344" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT HEADER (OD) -->
+        <mxCell id="4" value="Object-Detection model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontColor=#0d47a1;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="12" y="160" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT: Gathering CT — PARALLELOGRAM -->
+        <mxCell id="5" value="Gathering dataset&#xa;(CT scan dataset)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=18;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="12" y="264" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT: Annotating — RECT -->
+        <mxCell id="6" value="Annotating type of tumor" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="12" y="368" width="320" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT: Split data — RECT -->
+        <mxCell id="7" value="Split data for training model&#xa;(Train / Test / Valid)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="12" y="448" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT: Setting param — RECT -->
+        <mxCell id="8" value="Setting parameter and&#xa;selecting model for training" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="12" y="552" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- LEFT: Training — RECT -->
+        <mxCell id="9" value="Training model" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="12" y="656" width="320" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT HEADER (ML) -->
+        <mxCell id="10" value="Machine-Learning model" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#880e4f;fontColor=#880e4f;fontStyle=1;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="464" y="160" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT: Gathering patients — PARALLELOGRAM -->
+        <mxCell id="11" value="Gathering Dataset&#xa;(Patients information)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=18;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464" y="264" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT: Preprocessing — PARALLELOGRAM -->
+        <mxCell id="12" value="Preprocessing data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=18;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464" y="368" width="320" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT: Split data — RECT -->
+        <mxCell id="13" value="Split data for training model&#xa;(Train / Test)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464" y="448" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT: Setting param — RECT -->
+        <mxCell id="14" value="Setting parameter and&#xa;selecting model for training" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464" y="552" width="320" height="72" as="geometry" />
+        </mxCell>
+
+        <!-- RIGHT: Training — RECT -->
+        <mxCell id="15" value="Training model" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="464" y="656" width="320" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- EVALUATING -->
+        <mxCell id="16" value="Evaluating model" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="226" y="760" width="344" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- DECISION DIAMOND -->
+        <mxCell id="17" value="Is score good?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#f57f17;fontColor=#5d4037;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="298" y="840" width="200" height="128" as="geometry" />
+        </mxCell>
+
+        <!-- BUILD AND DEPLOY -->
+        <mxCell id="18" value="Build and deploy model" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="226" y="1008" width="344" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- END -->
+        <mxCell id="19" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#455a64;fontColor=#ffffff;strokeColor=#263238;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1088" width="88" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- ===== EDGES ===== -->
+
+        <!-- Start → Planning -->
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="2" target="3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Planning → Left Header (split left) -->
+        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="3" target="4" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398" y="136" />
+              <mxPoint x="172" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Planning → Right Header (split right) -->
+        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="3" target="10" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398" y="136" />
+              <mxPoint x="624" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Left branch arrows -->
+        <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="4" target="5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="5" target="6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="6" target="7" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="7" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="8" target="9" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Right branch arrows -->
+        <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="10" target="11" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="11" target="12" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="12" target="13" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="13" target="14" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="14" target="15" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Left Training → Evaluating (merge) -->
+        <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="9" target="16" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="172" y="730" />
+              <mxPoint x="398" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Right Training → Evaluating (merge) -->
+        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="15" target="16" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="624" y="730" />
+              <mxPoint x="398" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Evaluating → Diamond -->
+        <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="16" target="17" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Diamond → Build (YES) -->
+        <mxCell id="36" value="YES" style="edgeStyle=orthogonalEdgeStyle;html=1;fontColor=#2e7d32;fontStyle=1;fontSize=15;" edge="1" source="17" target="18" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Build → End -->
+        <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="18" target="19" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Diamond → Left Setting param (NO loop) -->
+        <mxCell id="38" value="NO" style="edgeStyle=orthogonalEdgeStyle;html=1;fontColor=#c62828;fontStyle=1;fontSize=15;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="17" target="8" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="904" />
+              <mxPoint x="10" y="588" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

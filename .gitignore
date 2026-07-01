@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+*.egg-info/
+
+# --- Trained model artifacts (large binaries, not source) ---
+*.pkl
+*.pt
+*.h5
+*.onnx
+
+# --- YOLO / training run outputs (generated) ---
+runs/
+catboost_info/
+custom_project/
+
+# --- Raw image datasets (large, not code) ---
+Detection_tumor/
+Test cases/
+cancer_lastest/
+cancer_test_valid/
+cancer detection -attempt 1-.v1-roboflow-instant-1--eval-.yolov8/
+verify_lungcancer_by_doctor/
+The IQ-OTHNCCD lung cancer dataset/
+
+# --- Editor / OS ---
+.vscode/
+.DS_Store
+Thumbs.db

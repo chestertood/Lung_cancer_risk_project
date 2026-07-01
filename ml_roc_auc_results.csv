@@ -1,0 +1,10 @@
+Model,Mean AUC,Std AUC
+Logistic Regression (Log),0.937,0.0535
+XGBoost (XGB),0.9006,0.0847
+LightGBM (LGBM),0.9043,0.0904
+CatBoost (CB),0.9145,0.0817
+Random Forest (RF),0.9224,0.0669
+Decision Tree (DT),0.7949,0.1423
+SVM,0.6781,0.1346
+KNN,0.8559,0.1439
+Naive Bayes (NB),0.8986,0.0888
